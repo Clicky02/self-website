@@ -19,10 +19,10 @@ class App extends React.Component {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/projects" element={<Projects/>}/>
+            <Route path={process.env.REACT_APP_ROOT_PATH + "/"} element={<Home/>}/>
+            <Route path={process.env.REACT_APP_ROOT_PATH + "/about"} element={<About/>}/>
+            <Route path={process.env.REACT_APP_ROOT_PATH + "/contact"} element={<Contact/>}/>
+            <Route path={process.env.REACT_APP_ROOT_PATH + "/projects"} element={<Projects/>}/>
           </Routes>
         </Router>
       </div>
