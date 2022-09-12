@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b04d06f.css",
+    "main.js": "/static/js/main.dd567bcb.js",
+    "static/media/Inter-VariableFont_slnt,wght.ttf": "/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/Inter-Light.ttf": "/static/media/Inter-Light.eec8664621fec98efb37.ttf",
+    "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.057aa247b66ac02c29b3.ttf",
+    "static/media/DroidSerif.ttf": "/static/media/DroidSerif.5629c884209db361d10c.ttf",
+    "index.html": "/index.html",
+    "main.9b04d06f.css.map": "/static/css/main.9b04d06f.css.map",
+    "main.dd567bcb.js.map": "/static/js/main.dd567bcb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b04d06f.css",
+    "static/js/main.dd567bcb.js"
+  ]
+}
