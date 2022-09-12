@@ -1,0 +1,33 @@
+.HeaderSpace {
+    --header-background-color: white;/*#cfcfcf;*/
+    --header-font-color: gray;
+}
+
+.HeaderSpace {
+    display: flex;
+    justify-content: center;
+
+    height: var(--header-size);
+    width: 100%;
+}
+
+.Header {
+    background: var(--header-background-color);
+    height: var(--header-size);
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.HeaderElement {
+    height: 100%;
+    flex-basis: 100px;
+    flex-grow: 1;
+}

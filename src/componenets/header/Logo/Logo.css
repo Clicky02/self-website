@@ -1,0 +1,87 @@
+.Logo {
+    --intial-expand-animation-time: 0.3s;
+    --text-expand-animation-time: 0.5s;
+    --first-name-width: 5ex;
+    --last-name-width: 3.47ex;
+}
+
+.Logo {
+    min-width: calc(8ex + var(--last-name-width));
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoElement {
+    font-size: 40px;
+    line-height: 40px;
+
+    position: relative;
+    transition: all var(--intial-expand-animation-time) ease;
+    transition-delay: var(--text-expand-animation-time);
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+}
+
+.Logo:hover .LogoElement {
+    font-size: 30px;
+    line-height: unset;
+
+    transition-delay: 0s;
+}
+
+.LogoElement.First {
+    transform: translateY(0);
+}
+
+.Logo:hover .LogoElement.First {
+    transform: translateY(-30%);
+}
+
+.LogoElement.Second {
+    transform: translateY(0);
+}
+
+.Logo:hover .LogoElement.Second {
+    transform: translateY(30%);
+}
+    
+.LogoText {
+    font-size: 24px;
+    line-height: 24px;
+
+    width: 0;
+    margin: 0;
+    transition: width var(--text-expand-animation-time) ease;
+
+    text-align: right;
+
+    overflow: hidden;
+
+    margin-bottom: 5px;
+}
+
+.Logo:hover .LogoText {
+    height: auto;
+    transition-delay: var(--intial-expand-animation-time);
+    margin-bottom: 5px;
+}
+
+.First .LogoText {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+}
+
+.Logo:hover .First .LogoText {
+    width: var(--first-name-width);
+}
+
+.Logo:hover .Second .LogoText {
+    width: var(--last-name-width);
+}

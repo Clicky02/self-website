@@ -1,0 +1,23 @@
+.HeaderLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderLinkUnderline {
+    width: 0;
+    height: 2px;
+
+    background-color: black;
+    border-radius: 2px;
+
+    margin-top: 2px;
+
+    transition: width 0.4s ease;
+}
+
+a:hover .HeaderLinkUnderline,
+.active .HeaderLinkUnderline {
+    width: 100%;
+}

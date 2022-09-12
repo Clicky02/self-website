@@ -1,0 +1,66 @@
+.FolderSVG {
+    --folder-shade-color: skyblue;
+    --folder-color: rgb(163 228 255);
+}
+
+#FrontFolder {
+    transition: transform ease 0.4s;
+
+    transform-origin: bottom left;
+    transform: skewX(345deg) scaleY(0.9) translate(-7%, -2%);
+
+    animation-delay: 1s;
+    animation-name: FolderFrontOpen;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    fill: var(--folder-color);
+}
+
+#FolderBack rect {
+    fill: var(--folder-shade-color);
+}
+
+@keyframes FolderFrontOpen {
+    from {
+        transform: skewX(345deg) scaleY(0.9) translate(-7%, -2%);
+    }
+
+    to {
+        transform: skewX(330deg) scaleY(0.75) translate(-15%, -8%);
+    }
+}
+
+@keyframes FolderPageOpen {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-34%);
+    }
+}
+
+@keyframes FolderPageHover {
+    from {transform: translateY(-34%);}
+    to {transform: translateY(-38%);}
+}
+
+#FolderPage {
+    animation-delay: 1s;
+    animation-name: FolderPageOpen;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.open #FolderPage {
+    transform: translateY(-34%);
+    animation-delay: 0.5s;
+    animation-name: FolderPageHover;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+

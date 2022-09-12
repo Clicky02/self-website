@@ -1,13 +1,75 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Droid-Serif";
+  src: url("assets/fonts/DroidSerif/DroidSerif.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("assets/fonts/Inter/static/Inter-Light.ttf");
+}
+
+
 body {
+  --background-color: white;
+  --header-size: 70px;
+  --body-module-size: calc(100vh - var(--header-size));
+}
+
+body {
+  background-color: var(--background-color);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  
+  font-family: Montserrat, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 100;
+  font-family: Inter-Light;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.PreTitle {
+  margin-bottom: 0;
+}
+
+.PreTitle + h1 {
+  margin-top: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.NoDecoration {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.FlexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
