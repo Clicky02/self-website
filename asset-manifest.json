@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/self-website/static/css/main.72cbaa64.css",
+    "main.css": "/self-website/static/css/main.557002da.css",
     "main.js": "/self-website/static/js/main.570552ef.js",
     "static/media/Inter-VariableFont_slnt,wght.ttf": "/self-website/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/self-website/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
@@ -8,11 +8,11 @@
     "static/media/Roboto-Light.ttf": "/self-website/static/media/Roboto-Light.057aa247b66ac02c29b3.ttf",
     "static/media/DroidSerif.ttf": "/self-website/static/media/DroidSerif.5629c884209db361d10c.ttf",
     "index.html": "/self-website/index.html",
-    "main.72cbaa64.css.map": "/self-website/static/css/main.72cbaa64.css.map",
+    "main.557002da.css.map": "/self-website/static/css/main.557002da.css.map",
     "main.570552ef.js.map": "/self-website/static/js/main.570552ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.72cbaa64.css",
+    "static/css/main.557002da.css",
     "static/js/main.570552ef.js"
   ]
 }
