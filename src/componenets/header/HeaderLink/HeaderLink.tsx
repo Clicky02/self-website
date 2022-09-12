@@ -11,7 +11,7 @@ class HeaderLink extends React.Component<HeaderLinkProperties> {
   render() {
     return (
       <div className="HeaderElement HeaderLink">
-        <NavLink className={({ isActive }) => 'HeaderLinkHolder NoDecoration' + (isActive ? ' active' : ' inactive')} to={process.env.REACT_APP_ROOT_PATH + this.props.path}>
+        <NavLink className={({ isActive }) => 'HeaderLinkHolder NoDecoration NoSelect' + (isActive ? ' active' : ' inactive')} to={process.env.REACT_APP_ROOT_PATH + this.props.path}>
           <div className='HeaderLinkText'>
             {this.props.displayText}
           </div>

@@ -28,7 +28,7 @@ class FolderImage extends React.Component<{}, FolderImageState> {
     return (
       <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" className={'FolderSVG' + (this.state.open ? ' open' : '')}>
         <g id="Frame 1">
-          <rect width="400" height="400" fill="white" />
+          <rect width="400" height="400" fill="none" />
           <g id="FolderBack">
             <g id="Rectangle 1" filter="url(#filter0_d_0_1)">
               <rect x="73" y="134" width="251" height="162" rx="15" fill="#D9D9D9" />

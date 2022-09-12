@@ -9,7 +9,7 @@ type LogoProperties = {
 class Logo extends React.Component<LogoProperties> {
   render() {
     return (
-      <Link to={process.env.REACT_APP_ROOT_PATH + "/"} className='NoDecoration'>
+      <Link to={process.env.REACT_APP_ROOT_PATH + "/"} className='NoDecoration NoSelect'>
         <div className={"Logo " + this.props.className}>
 
           <div className="LogoElement First">

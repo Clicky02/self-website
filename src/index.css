@@ -26,24 +26,37 @@
 
 body {
   --background-color: white;
+  --font-color: #000000;
+  --accent-color: #8fdeff;
+  --accent-color-low-opacity: #8fddff24;
+
   --header-size: 70px;
   --body-module-size: calc(100vh - var(--header-size));
+  --main-font: Montserrat, serif;
+  --accent-font: Inter-Light;
+}
+
+body.Dark {
+  --background-color: #1a1a1a;
+  --font-color: #ffffff;
+  --accent-color: #8fdeff;
 }
 
 body {
   background-color: var(--background-color);
   margin: 0;
   
-  font-family: Montserrat, serif;
+  font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
+  color: var(--font-color);
 }
 
 h1 {
   font-size: 70px;
   font-weight: 100;
-  font-family: Inter-Light;
+  font-family: var(--accent-font);
 }
 
 p {
@@ -72,4 +85,19 @@ code {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+}
+
+.AccentText {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.NoSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

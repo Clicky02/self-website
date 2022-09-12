@@ -1,9 +1,4 @@
 .HeaderSpace {
-    --header-background-color: white;/*#cfcfcf;*/
-    --header-font-color: gray;
-}
-
-.HeaderSpace {
     display: flex;
     justify-content: center;
 
@@ -12,7 +7,7 @@
 }
 
 .Header {
-    background: var(--header-background-color);
+    background: var(--background-color);
     height: var(--header-size);
     width: 100%;
     max-width: 1000px;

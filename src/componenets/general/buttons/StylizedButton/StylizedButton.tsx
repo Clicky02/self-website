@@ -8,7 +8,7 @@ type StylizedButtonProps = {
 class StylizedButton extends React.Component<StylizedButtonProps> {
   render() {
     return (
-      <button className='StylizedButton'>
+      <button className='StylizedButton AccentText NoSelect'>
         {this.props.children}
       </button>
     );
