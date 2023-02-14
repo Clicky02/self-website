@@ -4,7 +4,6 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "pages/contact/Contact";
 import Projects from "pages/projects/Projects";
-import PageRenderer from "creator/base/Page/PageRenderer/PageRenderer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
