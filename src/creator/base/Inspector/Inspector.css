@@ -1,0 +1,62 @@
+#Inspector {
+    width: 300px;
+
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+
+    background-color: rgb(219, 219, 219);
+
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+    overflow-y: auto;
+}
+
+#Inspector.Expanded {
+    right: 0;
+}
+
+#InspectorExpand {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+    line-height: 30px;
+    font-size: 30px;
+
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+.Inspector h1 {
+    font-size: 32px;
+}
+.Inspector h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+.Inspector h3 {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.Inspector h4 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+}

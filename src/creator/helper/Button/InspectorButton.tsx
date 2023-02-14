@@ -1,17 +1,17 @@
 import React from "react";
-import "./StylizedButton.css";
+import "./InspectorButton.css";
 
-type StylizedButtonProps = {
+type InspectorButtonProps = {
     children?: React.ReactNode;
     onClick?: (e: any) => void;
 };
 
-class StylizedButton extends React.Component<StylizedButtonProps> {
+class InspectorButton extends React.Component<InspectorButtonProps> {
     render() {
         return (
             <button
                 onClick={this.props.onClick}
-                className="StylizedButton AccentText NoSelect"
+                className="InspectorButton AccentText NoSelect"
             >
                 {this.props.children}
             </button>
@@ -19,4 +19,4 @@ class StylizedButton extends React.Component<StylizedButtonProps> {
     }
 }
 
-export default StylizedButton;
+export default InspectorButton;

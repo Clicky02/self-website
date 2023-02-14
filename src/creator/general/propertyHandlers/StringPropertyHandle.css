@@ -1,0 +1,35 @@
+.editableText {
+    white-space: pre-line;
+}
+
+.textInput {
+    background-color: white;
+
+    font-size: 14px;
+    font-family: var(--main-font);
+    width: 170px;
+
+    resize: both;
+
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(118, 118, 118);
+    border-image: initial;
+}
