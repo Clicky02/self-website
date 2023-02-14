@@ -1,0 +1,8 @@
+.HexagonLink {
+  transition: filter 0.4s;
+  filter: drop-shadow(0 0 3px transparent);
+}
+
+.HexagonLink:hover {
+  filter: drop-shadow(0 0 3px black);
+}

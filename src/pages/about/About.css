@@ -1,1 +1,16 @@
+.AboutImage {
+  width: 90%;
+  height: 100%;
 
+  margin: auto;
+}
+
+.AboutImageContainer {
+  margin-right: 8vw;
+  max-width: 400px;
+  width: 40%
+}
+
+.FlexRow {
+  align-items: center;
+}
